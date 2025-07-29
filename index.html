@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha384‑..."
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <header id="head">
+        <div class="hos-logo">
+        <i class="fa-solid fa-hospital"></i>
+         <span>Vijay Srishti</span>
+         </div>
+         <nav class="navbar">
+    
+   
+    <!--font awesome-->
+    <p style="text-align: right;">
+    <div class="navbar-menu-toggle" onClick="showNavBar()">
+        <i class="fa-solid fa-bars"></i>
+        </p>
+         </div>
+         <div class="navbar-links">
+            <p class="navbar-link"></p><a href="#home">Home</a></p>
+            <!-- <p class="navbar-link"><a>AboutUs</a></p> -->
+            <p class="navbar-link"><a href="#services">Services</a></p>
+            <!-- <p class="navbar-link"><a>Features</a></p>
+            <p class="navbar-link"><a>Stats</a></p> -->
+            <p class="navbar-link"><a href="#testimonial">Testimonials</a></p>
+            <!-- <p class="navbar-link"><a>Blog</a></p> -->
+            <p class="navbar-link"><a href="#contacts">Contact</a></p>
+            <!-- <p class="navbar-link"><a>Team</a></p>
+            <p class="navbar-link"><a>FAQ</a></p> -->
+            </div>
+         </div>
+        
+
+   
+    </nav>
+         <div class="side-navbar-links" onclick="closeNavBar()">
+               <!--side navbar-->
+        <div class="side-navbar" >
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        
+         <nav>
+            <p class="side-navbar-link"></p><a href="#home">Home</a></p>
+            <p class="side-navbar-link"><a href="">AboutUs</a></p>
+            <p class="side-navbar-link"><a href="#services">Services</a></p>
+            <p class="side-navbar-link"><a href="">Features</a></p>
+            <p class="side-navbar-link"><a>Stats</a></p>
+            <p class="side-navbar-link"><a href="#testimonials">Testimonials</a></p>
+            <p class="side-navbar-link"><a>Blog</a></p>
+            <p class="side-navbar-link"><a href="#contacts">Contact</a></p>
+            <p class="side-navbar-link"><a>Team</a></p>
+            <p class="side-navbar-link"><a>FAQ</a></p>
+            </div>
+            </div>
+
+         
+         </nav>
+         
+    </header>
+    
+    
+     <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container1">
+            <div id="img">
+            <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_8e4aeeddfb3f9c043ffd92cdab1ba827.webp" id="baby-img"  >
+            </div>
+            <div class="hero-content">
+                <div id="booking">
+        <p>Take the first step towards building your family</p><a href="#contacts"><button id="book-btn">Book your appointments</button></a>
+        
+    </div>
+                <div class="hero-text" style="width: 50vw;">
+                    <h1>Your Dream of Parenthood, Our Shared Journey</h1>
+                    <p>Your dream is within reach. Let us help you navigate the path to parenthood. 
+We're here to support you every step of the way.</p>
+                   <a href="#contacts"> <button class="hero-btn">Book your appointment</button></a>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+   <!-- section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2>Services We Excel In</h2>
+            <div class="services-slider">
+                <div class="service-track" id="track1">
+                    <div class="service-card">IUI</div>
+                    <div class="service-card">IVF</div>
+                    <div class="service-card">ICSI</div>
+                    <div class="service-card">Cryo Preservation</div>
+                    <div class="service-card">HSG</div>
+                    <div class="service-card">Hysterectomy</div>
+                    <div class="service-card">Diagnostic Laparoscopy</div>
+                    <div class="service-card">PESA & TESA</div>
+                    
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+  <h2 id="th2">What Our Patients Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial 1">
+
+      <p>"I had a wonderful experience at Vijay Srishti. The staff is kind and supportive."</p>
+      <h3> Priya Sharma</h3>
+    </div>
+    <div class="testimonial 2">
+      
+      <p>"Dr. Rekha is very knowledgeable and made us feel comfortable during our IVF journey."</p>
+      <h3> Arjun & Meena</h3>
+    </div>
+    <div class="testimonial 3">
+     
+      <p>"Thanks to this center, we are now proud parents. Highly recommend!"</p>
+      <h3> Karthik R.</h3>
+    </div>
+  
+  <div class="testimonial-control">
+    <button onclick="prev()">❮</button>
+    <button onclick="next()">❯</button>
+  </div>
+  </div>
+</section>
+
+
+<section id="contacts">
+    <div class="contact">
+    <h2>contacts</h2>
+    <div>
+    <h5>For all inquiries and communication, please fill out the following form.</h5>
+    </div>
+    </div>
+    <form>
+    <div class="details">
+        <label>Name:</label>
+        <input type="text" name="name"/>
+    
+        <label>Email:</label>
+        <input type="email" name="email"/>
+       
+        <label>Phone number:</label>
+        <input type="text" name="name" placeholder="91+ 98765 43210"/>
+    </div>
+
+    <div class="information">
+        <label>Message:</label>
+        <input type="text" name="Message" />
+        <button type="submit" class="info-btn">Submit</button>
+    </div>
+    
+     
+    </form>
+</section>
+
+    <script src="index.js"></script>
+    </body>
+    </html>
+
+    

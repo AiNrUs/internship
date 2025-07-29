@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+.body,html{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  
+}
+
+#head{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   height: 50px;
+}
+
+#booking{
+     position: relative;
+   position: fixed;
+    top:40px;
+    left: 600px;
+    background-color: white;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+#book-btn{
+    background-color: brown;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 15px;
+}
+.navbar-links a{
+     text-decoration: none;
+     color: rgb(15, 15, 17);
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: rgb(24, 24, 30);
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* media query */
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    } 
+    .navbar-links{
+    display: none;
+} 
+}
+/* side-navbar */
+.side-navbar{
+    background-color: rgb(24, 24, 41) ;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    color: azure;
+    display: none;
+}
+.side-navbar-link{
+    margin-top: 28px;
+}
+.side-navbar-link a{
+    text-decoration: none;
+    color: azure;
+
+}
+.side-navbar-link a:hover{
+    text-decoration:underline;
+
+}
+
+
+/* hero  content,home */
+
+
+#hero img{
+     position: relative;
+    width: 90%;
+    height: auto;
+     display: block;
+  margin: auto;
+  object-fit: cover;
+    
+    
+}
+.hero-text{
+    top: 350px;
+    left:50px;
+    font-size: xx-large;
+    text-align:start;
+}
+.hero-content{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    
+}
+.hero-btn{
+    color:white;
+    background-color: brown;
+    font-size: large;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+/* service Section */
+.services-section{
+    position: static;
+   
+    margin-top: 150px;
+    text-align: center;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.service-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollLeft 10s linear infinite;
+}
+
+.service-card {
+    background: var(--card);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    min-width: 200px;
+    text-align: center;
+    font-weight: 500;
+    
+}
+.service-card:hover {
+    box-shadow: var(--shadow-card);
+    transform: translateY(-20px);
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(50); }
+    100% { transform: translateX(-50%); }
+}
+
+#testimonial{
+  background: #f5f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  height: 250px;
+  
+}
+
+.testimonial {
+  display: none;
+  transition: all 0.5s ease-in-out;
+  padding: 50px;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+
+
+.testimonial h3 {
+  margin-top: 1px;
+  color: #0066b3;
+}
+
+.testimonial-control{
+   
+  margin-top: 30px;
+}
+
+.testimonial-control button{
+  background: #30495d;
+
+  color: white;
+  font-size: 10px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius:15px;
+}
+.contact{
+    margin-top: 100px;
+  text-align: center;
+  font-size:x-large;
+}
+
+.details{
+  max-width: 300px;
+  margin-top: 10px;
+  margin-left: 520px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px ;
+}
+@media screen and (max-width:700px) {
+    .details {
+        align-items: center;
+    } 
+    
+}
+@media screen and (max-width:700px) {
+    .information{
+        align-items: center;
+   
+}
+}
+
+
+.information{
+   display: block;
+  margin-top: 15px;
+  font-weight: 600;
+    max-width: 600px;
+    margin-left: 540px;
+
+}
+
+form button {
+    display: block;
+    margin-left: 10px;
+  margin-top: 20px;
+  padding: 13px;
+  background-color: #0066b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
